@@ -6,7 +6,7 @@
 <meta name="description" content="AutoPILOT is a screen-only visual agent harness for real-time gameplay. Explore AFK-Bench and compare results across 120 games.">
 <meta name="theme-color" content="#102728">
 <title>AutoPILOT · A Visual Agent Harness for Real-Time Gameplay</title>
-<link rel="stylesheet" href="style.css?v=particles">
+<link rel="stylesheet" href="style.css?v=gameworld-delta">
 <script defer src="data.js?v=effort"></script>
 <link rel="stylesheet" href="scroll-replay.css?v=duels">
 <script defer src="app.js?v=subsets"></script>
@@ -239,9 +239,9 @@
     <details><summary>Evaluation protocol</summary><p>Each episode allows 100 model calls, 2,000 environment steps and 2,000 seconds of game time. GPT-6.1 Sol ran three episodes per game, other models one. GPT-6 Astra and Claude Fable 5.2 were evaluated with AutoPILOT in real time at low and high effort.</p></details>
   </div>
 </section>
-<div class="transfer"><div><h3>Transfer to GameWorld</h3><p>AutoPILOT with GPT-6.1 Sol solves 80.0% of 170 tasks in real time across 34 games.</p></div><div class="scroll" tabindex="0" aria-label="GameWorld success rates"><table><thead><tr><th>Model</th><th>Harness</th><th>Paused</th><th>Real time</th></tr></thead><tbody>
-<tr><th>GPT-6.1 Sol</th><td>AutoPILOT</td><td>82.9%</td><td>80.0%</td></tr><tr><th>GPT-6.1 Sol</th><td>VISTA</td><td>84.1%</td><td>42.9%</td></tr>
-<tr><th>Claude Opus 5.5</th><td>AutoPILOT</td><td>72.4%</td><td>67.6%</td></tr><tr><th>Claude Opus 5.5</th><td>VISTA</td><td>67.1%</td><td>41.2%</td></tr></tbody></table></div></div>
+<div class="transfer" id="gameworld"><div><h3>Transfer to GameWorld</h3><p>AutoPILOT with GPT-6.1 Sol solves 80.0% of 170 tasks in real time across 34 games.</p></div><div class="scroll" tabindex="0" aria-label="GameWorld success rates"><table><thead><tr><th>Model</th><th>Harness</th><th>Paused</th><th>Real time</th><th scope="col">Paused − Real time</th></tr></thead><tbody>
+<tr><th>GPT-6.1 Sol</th><td>AutoPILOT</td><td>82.9%</td><td>80.0%</td><td class="clock-drop">2.9 pp</td></tr><tr><th>GPT-6.1 Sol</th><td>VISTA</td><td>84.1%</td><td>42.9%</td><td class="clock-drop">41.2 pp</td></tr>
+<tr><th>Claude Opus 5.5</th><td>AutoPILOT</td><td>72.4%</td><td>67.6%</td><td class="clock-drop">4.8 pp</td></tr><tr><th>Claude Opus 5.5</th><td>VISTA</td><td>67.1%</td><td>41.2%</td><td class="clock-drop">25.9 pp</td></tr></tbody></table></div></div>
 </section>
 <section class="section wrap analysis" id="analysis" aria-labelledby="analysis-title">
   <div class="analysis-heading"><h2 id="analysis-title">Analysis</h2><a href="assets/results_curves_2x2.pdf">Full figure (PDF)</a></div>
@@ -284,7 +284,7 @@
 <div class="groups"><article><img src="assets/praxis.webp" alt="Praxis Fighter X gameplay" loading="lazy"><div><h3>Hostile real-time</h3><p>Standing still can cost health, a life or the attempt.</p></div></article><article><img src="assets/truck.webp" alt="Tiny Truck Racing gameplay" loading="lazy"><div><h3>Benign real-time</h3><p>The world keeps moving while an idle player remains safe.</p></div></article><article><img src="assets/trichromat.webp" alt="Trichromat gameplay" loading="lazy"><div><h3>Turn-based</h3><p>The world advances only when the player acts.</p></div></article></div>
 <details class="catalog"><summary>Browse all 120 games</summary><div class="catalog-inner"><p>Wins with the clock running, out of three GPT-6.1 Sol episodes per game.</p><div class="controls"><label>Game name<input id="search" type="search" placeholder="Search games"></label><label>Environment<select id="group"><option>All environments</option><option>Hostile real-time</option><option>Benign real-time</option><option>Turn-based</option></select></label></div><p class="meta" id="count" aria-live="polite"></p><div class="scroll games-table" tabindex="0" aria-label="Game results"><table><thead><tr><th>Game</th><th>Environment</th><th>VISTA wins</th><th>AutoPILOT wins</th></tr></thead><tbody id="games"></tbody></table></div></div></details>
 </section></div>
-<section class="section wrap" id="citation"><h2>Citation</h2><pre><code>@misc{zhao2026autopilot,
+<section class="section wrap" id="citation"><h2>Citation</h2><p><a href="https://arxiv.org/abs/2611.28202">arXiv:2611.28202</a></p><pre><code>@misc{zhao2026autopilotvisualagentharness,
   title = {{AutoPILOT}: A Visual Agent Harness for Real-Time Gameplay},
   author = {Mark Zhao and
             Pengcheng Wang and
@@ -298,7 +298,11 @@
             Manling Li and
             Tong Zhang and
             Huan Zhang},
-  year = {2026}
+  year = {2026},
+  eprint = {2611.28202},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  url = {https://arxiv.org/abs/2611.28202}
 }</code></pre></section>
 </main><footer class="wrap"><a href="#main">AutoPILOT</a><span>Project page design reference · <a href="https://game2player.github.io/">Game2Player</a></span></footer>
 </body></html>

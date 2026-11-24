@@ -22,6 +22,15 @@ nav a,.button,footer a{text-decoration:none}nav a:hover,.button:hover,footer a:h
 .controls{align-items:flex-end;margin:18px 0 10px;gap:16px}.controls label{display:grid;gap:4px;color:var(--muted);font-size:.88rem;font-weight:600}select,input,button{font:inherit;color:var(--ink)}select,input{padding:8px 12px;border-radius:5px;border:1px solid #aabad0;background:white;font-size:1rem;max-width:100%}
 .meta{font-size:.9rem;color:var(--muted);margin-bottom:8px}.scroll{overflow:auto;border:1px solid var(--line);border-radius:7px}table{width:100%;border-collapse:separate;border-spacing:0;font-size:.95rem;font-variant-numeric:tabular-nums;white-space:nowrap}th,td{text-align:right;padding:10px 14px;border-bottom:1px solid #dfE7e3}thead th{background:#eaf1ec;font-weight:650}th:first-child,td:first-child,th:nth-child(2),td:nth-child(2){text-align:left}tbody th{font-weight:500}tbody tr:last-child>*{border-bottom:0}td.best{color:var(--teal);font-weight:700}.method-name{color:var(--teal);font-weight:650}
 #results>h3{margin:32px 0 8px}#results>p:not(.lead){max-width:790px}.transfer{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center;margin-top:40px}.transfer p{margin-top:10px}
+.transfer{scroll-margin-top:80px}
+.transfer .scroll{min-width:0}
+.transfer .clock-drop{color:#b32936;font-weight:650}
+@media(min-width:901px){.transfer{grid-template-columns:minmax(0,1fr) minmax(0,1.7fr)}}
+@media(max-width:600px){
+ .transfer th,.transfer td{padding:8px 5px;font-size:.8rem}
+ .transfer th{white-space:normal}
+}
+
 .switch{margin:23px 0 15px}.switch button{padding:7px 16px;border:1px solid #a9bfba;background:white;border-radius:20px;cursor:pointer}.switch button[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink)}#cases .paperfig{margin-top:17px}
 pre{font:.88rem/1.55 var(--mono);padding:22px;border:1px solid var(--line);background:var(--wash);border-radius:6px;overflow:auto}
 footer{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:24px 0;font-size:.9rem;color:var(--muted)}
