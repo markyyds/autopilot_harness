@@ -25,6 +25,7 @@ nav a,.button,footer a{text-decoration:none}nav a:hover,.button:hover,footer a:h
 .transfer{scroll-margin-top:80px}
 .transfer .scroll{min-width:0}
 .transfer thead th:last-child,.transfer .clock-drop{text-align:center}
+.transfer th small{display:block;font-size:.8em;font-weight:500;color:var(--muted)}
 .transfer .clock-drop{color:#b32936;font-weight:650}
 @media(min-width:901px){.transfer{grid-template-columns:minmax(0,1fr) minmax(0,1.7fr)}}
 @media(max-width:600px){

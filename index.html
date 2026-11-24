@@ -6,7 +6,7 @@
 <meta name="description" content="AutoPILOT is a screen-only visual agent harness for real-time gameplay. Explore AFK-Bench and compare results across 120 games.">
 <meta name="theme-color" content="#102728">
 <title>AutoPILOT · A Visual Agent Harness for Real-Time Gameplay</title>
-<link rel="stylesheet" href="style.css?v=gameworld-delta2">
+<link rel="stylesheet" href="style.css?v=gameworld-delta3">
 <script defer src="data.js?v=effort"></script>
 <link rel="stylesheet" href="scroll-replay.css?v=duels">
 <script defer src="app.js?v=subsets"></script>
@@ -239,7 +239,7 @@
     <details><summary>Evaluation protocol</summary><p>Each episode allows 100 model calls, 2,000 environment steps and 2,000 seconds of game time. GPT-6.1 Sol ran three episodes per game, other models one. GPT-6 Astra and Claude Fable 5.2 were evaluated with AutoPILOT in real time at low and high effort.</p></details>
   </div>
 </section>
-<div class="transfer" id="gameworld"><div><h3>Transfer to GameWorld</h3><p>AutoPILOT with GPT-6.1 Sol solves 80.0% of 170 tasks in real time across 34 games.</p></div><div class="scroll" tabindex="0" aria-label="GameWorld success rates"><table><thead><tr><th>Model</th><th>Harness</th><th>Paused</th><th>Real time</th><th scope="col">Paused − Real time</th></tr></thead><tbody>
+<div class="transfer" id="gameworld"><div><h3>Transfer to GameWorld</h3><p>AutoPILOT with GPT-6.1 Sol solves 80.0% of 170 tasks in real time across 34 games.</p></div><div class="scroll" tabindex="0" aria-label="GameWorld success rates"><table><thead><tr><th>Model</th><th>Harness</th><th>Paused</th><th>Real time</th><th scope="col">Paused − Real time <small>Smaller is better</small></th></tr></thead><tbody>
 <tr><th>GPT-6.1 Sol</th><td>AutoPILOT</td><td>82.9%</td><td>80.0%</td><td class="clock-drop">2.9 pp</td></tr><tr><th>GPT-6.1 Sol</th><td>VISTA</td><td>84.1%</td><td>42.9%</td><td class="clock-drop">41.2 pp</td></tr>
 <tr><th>Claude Opus 5.5</th><td>AutoPILOT</td><td>72.4%</td><td>67.6%</td><td class="clock-drop">4.8 pp</td></tr><tr><th>Claude Opus 5.5</th><td>VISTA</td><td>67.1%</td><td>41.2%</td><td class="clock-drop">25.9 pp</td></tr></tbody></table></div></div>
 </section>
