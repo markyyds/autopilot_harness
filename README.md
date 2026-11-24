@@ -3,7 +3,7 @@
 
 AutoPILOT lets a model send one action, start a fixed sequence of actions, or write a controller that reads the screen and keeps playing between model calls.
 
-[Project website](https://markyyds.github.io/autopilot_harness/) · [Gameplay demos](https://markyyds.github.io/autopilot_harness/#comparison) · [Paper PDF](https://markyyds.github.io/autopilot_harness/assets/autopilot.pdf)
+[Project website](https://autopilot-harness.github.io/) · [Gameplay demos](https://autopilot-harness.github.io/#comparison) · [Paper PDF](https://autopilot-harness.github.io/assets/autopilot.pdf)
 
 **Code coming soon.**
 
